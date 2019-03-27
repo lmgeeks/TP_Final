@@ -1,0 +1,35 @@
+{
+  "name": "proyecto_fizzmod",
+  "version": "0.1.0",
+  "description": "Una aplicación de chat en tiempo real ",
+  "main": "server_web.js",
+  "scripts": {
+    "start": "node server_api_usuarios.js & node server_api_mensajes.js & node server_web.js",
+    "server_web": "node server_web.js",
+    "server_usuarios": "node server_api_usuarios.js",
+    "server_mensajes": "node server_api_mensajes.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gastonpereyra/proyecto_fizzmod.git"
+  },
+  "keywords": [
+    "Node",
+    "Fizzmod",
+    "WebSocket",
+    "REST",
+    "API"
+  ],
+  "author": "Ricardo Gastón Pereyra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gastonpereyra/proyecto_fizzmod/issues"
+  },
+  "homepage": "https://github.com/gastonpereyra/proyecto_fizzmod#readme",
+  "dependencies": {
+    "mysql": "^2.16.0",
+    "node-fetch": "^2.3.0",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0"
+  }
+}
